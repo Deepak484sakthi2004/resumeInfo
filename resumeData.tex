@@ -1,0 +1,178 @@
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+}
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE DEEPAKSAKTHI VELLORE KUMAR}} & Email: \href{mailto:deepak2004sakthi@gmail.com}{deepak2004sakthi@gmail.com}\\
+  \href{https://deepaksakthi-v-k-terminal-portfolio.vercel.app/}{Portfolio: deepak-v-k.com} & Mobile: +91-9787558677 \\
+  \href{https://github.com/Deepak484sakthi2004/}{Github: github.com/Deepak2004sakthi484} \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {St. Joseph's College Of Engineering}{Chennai, India}
+      {Bachelor of Technology in Information Technology; GPA: 8.19/10}{Nov 2021 -- Present}
+    \resumeSubheading
+      {Sri Chaitanya Techno Schools}{Bangalore, India}
+      {High School; 93.8\%}{Jun 2019 -- May 2021}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+  \resumeSubheading
+  {SuperOps.ai}{Chennai, India}
+  {Software Engineer Intern}{Aug 2024 -- Present}
+  \resumeItemListStart
+    \resumeItem{Activity \& User Audit Framework}
+      {Implemented audit logging system using SpringBoot and MySQL to track user actions, with Pulsar for real-time event streaming.}
+    \resumeItem{Software Management}
+      {Developed scheduled/on-demand software install/update/uninstall features for enterprise management.}
+  \resumeItemListEnd
+  
+  \resumeSubheading
+  {ToToys AI}{Remote, Bangalore, India}
+  {AI/ML Engineer Intern}{Jun 2024 -- Aug 2024}
+  \resumeItemListStart
+    \resumeItem{Student LLM Knowledge Assistant}
+      {Developed RAG model fine-tuned on textbooks; deployed on AWS (EC2 → Lambda) with Nginx reverse proxy.}
+    \resumeItem{Solo Development}
+      {Owned entire pipeline from data preprocessing to production deployment.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+  {KoworkerAI}{Remote, UAE}
+  {Fullstack AI Developer Intern}{Apr 2024 -- Aug 2024}
+  \resumeItemListStart
+    \resumeItem{AI Recruitment System}
+      {Built end-to-end pipeline for resume matching, interview scheduling (email automation), and interviewer tools.}
+    \resumeItem{Performance}
+      {Reduced hiring time by 50\% through automated candidate shortlisting.}
+  \resumeItemListEnd
+  
+  \resumeSubheading
+  {Innomatics Research Labs}{Remote, Hyderabad, India}
+  {Data Science Trainee}{Feb 2023 -- May 2023}
+  \resumeItemListStart
+    \resumeItem{ML Deployment}
+      {Deployed models on AWS achieving 92\% accuracy in classification tasks.}
+    \resumeItem{API Optimization}
+      {Improved Flask/Streamlit API response time by 25\%.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------SKILLS-----------------
+\section{Technical Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Languages}{Python, Java, C, JavaScript}
+    \resumeSubItem{AI/ML}{PyTorch, TensorFlow, Langchain, NLP}
+    \resumeSubItem{Backend}{SpringBoot, Flask, Django, Node.js}
+    \resumeSubItem{Cloud/DevOps}{AWS (EC2, Lambda, VPC), Docker, MySQL, MongoDB}
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{RAG Chatbot}{Retrieval-Augmented Generation chatbot using Langchain and vector DBs.}
+    \resumeSubItem{Character-Level GPT}{Implemented from scratch (212K parameters) for text generation.}
+    \resumeSubItem{Audio/Video Summarizer}{Whisper + Gemini Pro pipeline for 35\% faster content digestion.}
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------------
+\section{Skills}
+  \resumeSubHeadingListStart
+
+    \resumeSubItem{Programming Languages}
+    {Python | Java | C | Processing (Basics)}
+
+    \resumeSubItem{AI Integration Frameworks}
+    {Langchain | crewAI | LlamaIndex}
+
+    \resumeSubItem{Backend Tools \& Frameworks}
+    {Flask | Django | SpringBoot (Basics) | NodeJS (Basics)}
+
+    \resumeSubItem{Databases}
+    {MariaDB | PostgreSQL | MongoDB \\
+    Experience setting up Database Clusters (Galera) and Replication (Master-Slave, Master-Master)}
+
+    \resumeSubItem{Additional Tools \& Libraries}
+    {Machine Learning, Deep Learning, Scikit-Learn, PyTorch, TensorFlow, Flask, NumPy, Pandas, Matplotlib, Seaborn, Keras, NLTK, OpenCV, JavaScript, HTML/CSS}
+
+    \resumeSubItem{Cloud \& DevOps}
+    {AWS (EC2, VPC, S3, ELB), Docker (Basics), Nginx (Load Balancing), OpenLDAP Configuration}
+
+  \resumeSubHeadingListEnd
+
+
+%-----------CERTIFICATIONS-----------------
+\section{Certifications}
+  \resumeSubHeadingListStart
+    \resumeSubItem{B2 Business Vantage}{Cambridge English \href{https://www.cambridgeenglish.org/exams-and-tests/business-certificates/}{[Link]}}
+    \resumeSubItem{Advanced Programming Certification}{Certified under Bharathiar University - CCII Programme}
+    \resumeSubItem{Machine Learning with Python}{IBM, Coursera}
+    \resumeSubItem{Statistics for Data Science}{Coursera}
+  \resumeSubHeadingListEnd
+
+
+\end{document}
